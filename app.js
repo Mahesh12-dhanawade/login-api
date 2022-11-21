@@ -12,8 +12,11 @@ app.use("/api/auth", AuthContoller);
 // app.listen(port,() => {
 //     console.log(`listening on port ${port}`)
 // })
+
+let url = process.env.mongoUrl
+console.log(url)
 mongoose
-  .connect(`${process.env.mongoUrl}`, {
+  .connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     dbName: "juneintern",
