@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
+let dotenv = require('dotenv')
+dotenv.config()
 let mongoose = require('mongoose')
-let db = `mongodb+srv://admin:admin123@cluster0.tmkqoa7.mongodb.net/?retryWrites=true&w=majority`
+let db = process.env.MONGO_URL
 const port = process.env.PORT || 5000;
 const cors = require('cors');
 app.use(cors());

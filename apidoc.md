@@ -1,5 +1,6 @@
 *GetAllUser/ 
 (GET)> https://developerjwt.herokuapp.com/api/auth/users
+https://log-api.onrender.com/api/auth/users
 (GET) => http://localhost:5000/api/auth/users
 
 /*Register/ 
